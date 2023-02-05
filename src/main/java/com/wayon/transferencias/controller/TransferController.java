@@ -31,20 +31,3 @@ public class TransferController {
 };
 
 
-//    @RequestMapping(value = "/preReservar", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-//    @ResponseBody
-//    public String preReservar(@RequestBody String jsonRQ) {
-//        WSPreReservarRQ wsRQ = gson.fromJson(jsonRQ, WSPreReservarRQ.class);
-//        WSPreReservarRS result = null;
-//        wsRQ.getIntegrador().setDsMetodo("preReservar");
-//        try {
-//            result = preReservarHotelWS.preReservar(wsRQ);
-//        } catch (ErrorException ex) {
-//            result = new WSPreReservarRS(null, ex.getIntegrador());
-//        } catch (Exception ex) {
-//            result = new WSPreReservarRS(null, new ErrorException(wsRQ.getIntegrador(), ApiControllerHotels.class, "preReservar", WSMensagemErroEnum.GENNULO, "Erro na chamada de pre reservar", WSIntegracaoStatusEnum.NEGADO, ex).getIntegrador());
-//        } finally {
-//            LogWS.gerarLog(result.getIntegrador(), jsonRQ, result);
-//        }
-//        return (gson.toJson(result));
-//    }
