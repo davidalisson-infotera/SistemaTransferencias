@@ -1,5 +1,5 @@
 # SistemaTransferencias
-Sistema para agendamento de transferências e agendamento de transferências bancárias
+Sistema para agendamento de transferências bancárias
 
 - Projeto separado em duas branches : 
 
