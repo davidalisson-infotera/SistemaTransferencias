@@ -53,7 +53,6 @@ export class InicioComponent implements OnInit {
     dataAgendamento: this.dataAgendamento
     };
     
-    console.log(transferencia);
     axios.post('http://localhost:8080/api/transferencias', transferencia)
     .then(response => {
     alert("Transferência realizada");
