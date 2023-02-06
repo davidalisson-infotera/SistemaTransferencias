@@ -56,7 +56,7 @@ export class InicioComponent implements OnInit {
     console.log(transferencia);
     axios.post('http://localhost:8080/api/transferencias', transferencia)
     .then(response => {
-    console.log(response.data);
+    alert("Transferência realizada");
     })
     .catch(error => {
     console.log(error);
