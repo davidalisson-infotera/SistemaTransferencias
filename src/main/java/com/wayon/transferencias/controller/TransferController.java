@@ -19,7 +19,6 @@ public class TransferController {
 
     @RequestMapping(value = "/api/transferencias", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public Transferencia agendarTransfer(@RequestBody Transferencia transfer) {
-        System.out.println("teste");
         return transferService.agendarTransfers(transfer);
     }
 
