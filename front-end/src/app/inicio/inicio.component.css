@@ -1,0 +1,25 @@
+#formTransferencia{
+    display: flex;
+    justify-content: center;
+
+}
+
+#cadastroForm{
+    background-color: lightblue;
+    border-radius: 2%;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    padding-top: 2%;
+    padding-bottom: 20px;
+}
+
+#cadastroForm div{
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+
+
+  

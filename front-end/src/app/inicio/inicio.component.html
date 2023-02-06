@@ -1,0 +1,42 @@
+<h1 style="text-align: center">Transferência bancária</h1>
+<form id="formTransferencia" [formGroup]="transferForm" (ngSubmit)="onSubmit(transferForm)" class="form-group">
+
+  <div id="cadastroForm">
+      <div class="form-group">
+        <span>Tipos de transferência : </span>
+
+          <input id="tipoOperacao" formControlName="tipoOperacao" required type="radio" name="opcao" value="A"> A
+          <input id="tipoOperacao" formControlName="tipoOperacao" required type="radio" name="opcao" value="B"> B
+          <input id="tipoOperacao" formControlName="tipoOperacao" required type="radio" name="opcao" value="C"> C
+          <input id="tipoOperacao" formControlName="tipoOperacao" required type="radio" name="opcao" value="D"> D
+      </div>
+      <div id="formInputs" style="display: block; text-align: center;">
+          <div class="form-group" style="display: block;">
+            <label formControlName="contaOrigem">Conta de origem:</label>
+            <input type="text" id="contaOrigem" name="contaOrigem" formControlName="contaOrigem" required>
+          </div>
+          <div class="form-group" style="display: block;">
+            <label formControlName="contaDestino">Conta de destino:</label>
+            <input type="text" id="contaDestino" name="contaDestino" formControlName="contaDestino" required>
+          </div>
+          <div class="form-group" style="display: block;">
+            <label formControlName="valor">Valor da transferência:</label>
+            <input type="text" id="valor" name="valor" formControlName="valor"  required>
+          </div>
+          <div style="display: block;">
+            <label formControlName="dataTransferencia">Data da transferência:</label>
+            <input placeholder="DD/MM/YYYY" type="text" id="dataTransferencia" name="dataTransferencia" formControlName="dataTransferencia" required>
+          </div>
+          <div class="form-group" style="display: block;">
+            <label formControlName="dataAgendamento">Data de agendamento:</label>
+            <input placeholder="DD/MM/YYYY" type="text" id="dataAgendamento" name="dataAgendamento" formControlName="dataAgendamento" required>
+          </div>
+          <button type="submit"  style="display: block; text-align: center;">Enviar</button>
+      </div>
+    </div>
+
+    
+
+  
+</form>
+

@@ -1,0 +1,24 @@
+<table *ngIf="transferencias" class="table table-striped" >
+  <thead>
+    <tr>
+      <th>Tipo de operação</th>
+      <th>Conta Origem</th>
+      <th>Conta Destino</th>
+      <th>Valor</th>
+      <th>Taxa</th>
+      <th>Data da Transferência</th>
+      <th>Data do Agendamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transferencia of transferencias">
+      <td>{{transferencia.tipoOperacao}}</td>
+      <td>{{transferencia.contaOrigem}}</td>
+      <td>{{transferencia.contaDestino}}</td>
+      <td>{{transferencia.valor}}</td>
+      <td>{{transferencia.taxa}}</td>
+      <td>{{transferencia.dataTransferencia}}</td>
+      <td>{{transferencia.dataAgendamento}}</td>
+    </tr>
+  </tbody>
+</table>
